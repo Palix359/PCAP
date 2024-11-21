@@ -1,0 +1,69 @@
+'''
+Operatory logiczne:
+and
+or
+not
+Opertory bitowe:
+&   koniunkcja
+|   alternatywa
+^   roznica symetryczna
+~   negacja
+'''
+
+a=4 # 100
+b=1 # 001
+print(a&b) #000
+print(a | b) # 101 -> 5
+print(a ^ b) # 101 -> 5
+print(~a) #100 -> 5
+         #1011 -> -1*2^3+0*2^2+1*2^1+1^2^0=-5
+print(a) #True
+print(not a) #False
+a=-4
+print(not a) #Flase
+a=0
+print(not a) #True
+
+i=15
+j=22
+print(bin(i)) #1111 0b binary
+print(oct(i)) #17 0o octal
+print(hex(i)) #F 0x hex
+
+liczba='ab1'
+print(type(liczba))
+print(int(liczba, 16))
+print(type(int(liczba, 16)))
+
+i=15
+j=22
+print(i>1 and j<100) # T and T --> T
+print(type(i>1 and j<100)) #bool
+#ex. 2
+z=2
+y=1
+x=y<z or z>y and y>z or z<y #Priorytety: not, and, or
+# True or True and False or False
+# True or False or False
+# True or False
+# True
+print(x)
+print(type(x)) #bool
+
+a=4
+# <<   >>   przesunięcie bitowe
+a=a>>1 # 100 010
+print(a)
+a=4
+a=a>>2 # 100 001 dzielenie przez 2
+print(a)
+a=a<<2 #001 100 mnożenie przez 2
+print(a)
+
+#ex.3
+var=10
+print(var<<1) #20
+print(var>>2) #2
+var>>=2
+
+
