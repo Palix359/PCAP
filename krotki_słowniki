@@ -1,0 +1,58 @@
+#tupple niezmienny typ sekwencyjny nie stosujemy append, insert, del
+L = []
+T = ()
+D = {}
+tuple_1=(1, 2, 3, 4)
+tuple_2 = 1, 2, 3, 4
+tuple_2, tuple_3 = 1, 2
+print(type(tuple_1),type(tuple_2))
+t=1
+t=1,
+t=(1,)
+print(type(t))
+tuple_4=('Jan',2, (2,4),[1,2])
+print(*tuple_4)
+first10finumbers=(1,1,2,3,5,6,3,9)
+firstnumbers=(1,2,3,7,11,13,17,21)
+t=first10finumbers+firstnumbers
+print(t)
+T=t
+print(len(T))
+k1=(1,2,3,4,5)
+k13=k1*3
+print(k13)
+addTuples=(1,2,3)+(3,2,1)
+print(addTuples)
+print(addTuples[1])
+#addTuples[1]=2
+print(3 in addTuples)
+print(addTuples.count(3))
+L=list(addTuples)
+print(type(L))
+print(L)
+addTuples=tuple(L)
+print(addTuples)
+print(type(L)) # list
+t1=1,
+t2=2,
+t3=3,
+t3,t2,t1=t1,t2,t3
+print(t1,t2,t3) 
+print(*addTuples)
+
+#Zad. 1
+tup = 1, 2, 3
+a,b,c = tup
+print(a*b*c) #6
+
+#dictionary - zmienny typ niesekwencyjny
+dict_en_pl={'dog':'pies','house':'dom'}
+print(dict_en_pl)
+# dict_en_pl.append({'kot':'cat'}) nie da się
+dict_en_pl.update({'cat':'kot'})
+dict_en_pl.update({'dog':'kon'})
+print(dict_en_pl)#print(*dict_en_pl) nie działa mi (nie było na lekcji)
+dict_en_pl['duck']='kaczka'
+print(dict_en_pl)
+dict_en_pl.pop('dog')
+print('duck' in dict_en_pl)
